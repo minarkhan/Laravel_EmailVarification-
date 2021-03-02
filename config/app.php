@@ -166,6 +166,11 @@ return [
          * Package Service Providers...
          */
 
+
+        // User UserVerification Package
+        Jrean\UserVerification\UserVerificationServiceProvider::class,
+
+
         /*
          * Application Service Providers...
          */
@@ -226,7 +231,9 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
+        
+        // User UserVerification Package
+        'UserVerification' => Jrean\UserVerification\Facades\UserVerification::class,
     ],
 
 ];
